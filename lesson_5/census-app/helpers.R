@@ -1,0 +1,7 @@
+library(maps)
+library(mapproj)
+# source("lesson_5/census-app/helpers.R")
+source("helpers.R")
+# counties <- readRDS("lesson_5/census-app/data/counties.rds")
+counties <- readRDS("data/counties.rds")
+percent_map(counties$white, "darkgreen", "% White")
